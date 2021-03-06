@@ -1,0 +1,42 @@
+.contenedor{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header header"
+                        "sidebar-1 contenido sidebar-2"
+                        "sidebar-1 widget sidebar-2"
+                        "footer footer footer";
+
+}
+
+.contenedor .header{
+    background: chocolate;
+    grid-area: header;
+}
+
+.contenedor .sidebar-1{
+    background: cornflowerblue;
+    grid-area: sidebar-1;
+}
+
+.contenedor .contenido{
+    background: crimson;
+    grid-area: contenido;
+}
+
+.contenedor .sidebar-2{
+    background: darkcyan;
+    grid-area: sidebar-2;
+}
+
+.contenedor .widget{
+    background: darkgreen;
+    grid-area: widget;
+}
+
+.contenedor .footer{
+    background: rgb(14, 0, 139);
+    grid-area: footer;
+}
+

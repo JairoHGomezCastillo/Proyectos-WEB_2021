@@ -1,0 +1,12 @@
+.contenedor{
+    display: grid;
+    gap: 20px;/*espacio entre columns*/
+    height: 700px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+
+    justify-content: space-evenly; /*alinear hort la grid en el contenedor*/
+    align-content: space-evenly; /*alinear vert la grid en el contenedor*/
+
+
+}

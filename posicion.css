@@ -1,0 +1,24 @@
+.contenedor{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+.contenedor .item{
+    background: coral;
+    /* grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3; */
+
+    /* grid-column: 2/3;
+    grid-row: 3/4; */
+
+    /* grid-area: 1/2/3/3; */
+
+    /* span */
+    grid-column: span 3;
+    grid-row: 2 / span 3;
+
+}

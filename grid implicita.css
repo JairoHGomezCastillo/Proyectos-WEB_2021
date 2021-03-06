@@ -1,0 +1,23 @@
+.contenedor{
+    display: grid;
+    gap: 20px;/*espacio entre columns*/
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 200px 100px 200px;
+
+    grid-auto-columns: 100px;/* ancho de las filas implicitas */
+    grid-auto-rows: 300px;/* alto de las filas  */
+
+    grid-auto-flow: dense;/* cambia el flujo de la grid */
+}
+
+.contenedor .span2{
+    grid-column: span 2;/* rellena en ancho colunas */
+    /* grid-row: span 2; *//*rellena alto filas*/
+    background: chocolate;
+}
+
+.contenedor .span3{
+    grid-column: span 3;
+    /* grid-row: span 2; *//*rellena alto filas*/
+    background: darkcyan;
+}

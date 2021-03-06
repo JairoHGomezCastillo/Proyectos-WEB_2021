@@ -1,0 +1,5 @@
+.contenedor{
+    display: grid;
+    gap: 20px;/*espacio entre columns*/
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+}
